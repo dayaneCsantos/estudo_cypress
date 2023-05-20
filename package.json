@@ -1,0 +1,16 @@
+{
+  "name": "estudo_cypress",
+  "version": "1.0.0",
+  "description": "Projeto de estudo sobre Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "test:ci": "cypress run --spec cypress/e2e/checkout.cy.js"
+  },
+  "author": "Dayane Santos",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^12.12.0"
+  }
+}
