@@ -4,13 +4,18 @@
   "description": "Projeto de estudo sobre Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open",
-    "test:ci": "cypress run"
+    "cy:open": "npx cypress open",
+    "cy:ci": "cypress run",
+    "lint": "eslint cypress/e2e/*.cy.js",
+    "lint:fix": "eslint cypress/e2e/*.cy.js --fix"
+
   },
   "author": "Dayane Santos",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "cypress": "^12.12.0"
+    "cypress": "^12.12.0",
+    "eslint": "^8.41.0",
+    "eslint-plugin-cypress": "^2.13.3"
   }
 }
