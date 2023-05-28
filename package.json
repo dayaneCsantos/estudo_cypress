@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress open",
-    "test:ci": "cypress run --spec cypress/e2e/checkout.cy.js"
+    "test:ci": "cypress run"
   },
   "author": "Dayane Santos",
   "license": "ISC",
