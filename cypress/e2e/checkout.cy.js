@@ -9,7 +9,7 @@ describe('Checkout com sucesso', () => {
       .should('exist')
       .click()
 
-      cy.get('[data-testid=common-ui-button]')
+    cy.get('[data-testid=common-ui-button]')
       .contains('Finalizar pedido').should('exist')
   })
 
@@ -22,30 +22,42 @@ describe('Checkout com sucesso', () => {
     cy.get('[data-testid=common-ui-input-label]')
       .contains('Número')
       .click()
+
+    cy.get('[data-testid=common-ui-input-label]')
+      .contains('Número')
       .type('5269 8271 6780 4732')
 
     cy.get('[data-testid=common-ui-input-label]')
       .contains('Nome do titular do cartão')
       .click()
+
+    cy.get('[data-testid=common-ui-input-label]')
+      .contains('Nome do titular do cartão')
       .type('teste vamos lá')
 
     cy.get('[data-testid=common-ui-input-label]')
       .contains('Data de validade')
       .click()
+
+    cy.get('[data-testid=common-ui-input-label]')
+      .contains('Data de validade')
       .type('1225')
 
     cy.get('[data-testid=common-ui-input-label]')
       .contains('Código CVV')
       .click()
+
+    cy.get('[data-testid=common-ui-input-label]')
+      .contains('Código CVV')
       .type('123')
 
-      cy.get('[data-testid=common-ui-button]')
-        .contains('Finalizar pedido')
-        .should('be.enabled')
-        .click()
+    cy.get('[data-testid=common-ui-button]')
+      .contains('Finalizar pedido')
+      .should('be.enabled')
+      .click()
 
-      cy.get('[data-testid=common-ui-card]')
-        .contains('Compra efetuada com sucesso')
+    cy.get('[data-testid=common-ui-card]')
+      .contains('Compra efetuada com sucesso')
   })
 })
 
