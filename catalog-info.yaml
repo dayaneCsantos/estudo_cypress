@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Projeto estudo
-  description: Projeto estudo
+  name: projeto-estudo-cypress
+  description: projeto-estudo-cypress
   annotations:
     github.com/project-slug: 'dayaneCsantos/estudo_cypress'
 spec:
