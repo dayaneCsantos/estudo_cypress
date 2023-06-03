@@ -3,7 +3,7 @@ describe('Checkout com sucesso', () => {
     cy.visit('/')
   })
 
-  it('Deve redicionar para a tela de pagamento', ( ) => {
+  it('Deve redicionar para a tela de pagamento.', ( ) => {
     cy.get('[data-testid=common-ui-button]')
       .contains('Seguir para o pagamento')
       .should('exist')
@@ -74,3 +74,4 @@ describe('checkout - Validações ', () => {
     cy.get('[data-testid=common-ui-button]').should('not.be.enabled')
   })
 })
+
