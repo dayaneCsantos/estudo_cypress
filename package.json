@@ -7,8 +7,8 @@
     "cy:open": "npx cypress open",
     "cy:ci": "cypress run",
     "lint": "eslint cypress/e2e/*.cy.js",
-    "lint:fix": "eslint cypress/e2e/*.cy.js --fix"
-
+    "lint:fix": "eslint cypress/e2e/*.cy.js --fix",
+    "prepare": "husky install"
   },
   "author": "Dayane Santos",
   "license": "ISC",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "cypress": "^12.12.0",
     "eslint": "^8.41.0",
-    "eslint-plugin-cypress": "^2.13.3"
+    "eslint-plugin-cypress": "^2.13.3",
+    "husky": "^8.0.3"
   }
 }
